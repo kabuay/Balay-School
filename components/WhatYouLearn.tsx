@@ -1,6 +1,6 @@
 
 import React from 'react';
-import { PenTool, Scissors, Heart, Palette, Globe } from 'lucide-react';
+import { PenTool, Heart, Palette, Globe } from 'lucide-react';
 
 const WhatYouLearn: React.FC = () => {
   const curriculum = [
@@ -23,11 +23,6 @@ const WhatYouLearn: React.FC = () => {
       icon: <Globe className="text-white" />,
       title: "Cultural Storytelling",
       desc: "The art of narrative that creates emotional connection and sparks collective action."
-    },
-    {
-      icon: <Scissors className="text-white" />,
-      title: "Sustainable Practice",
-      desc: "Building practice that honors accessibility, generates ethical income, and fosters community."
     }
   ];
 
@@ -42,7 +37,7 @@ const WhatYouLearn: React.FC = () => {
           </p>
         </div>
 
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="grid md:grid-cols-2 lg:grid-cols-2 gap-8 max-w-5xl mx-auto">
           {curriculum.map((item, i) => (
             <div key={i} className="p-8 bg-slate-50 rounded-3xl hover:bg-white hover:shadow-2xl transition-all duration-300 border border-transparent hover:border-purple-100 group">
               <div className="w-14 h-14 rounded-2xl bg-balay-gradient flex items-center justify-center mb-6 shadow-lg group-hover:scale-110 transition-transform">
@@ -52,18 +47,6 @@ const WhatYouLearn: React.FC = () => {
               <p className="text-slate-600 leading-relaxed">{item.desc}</p>
             </div>
           ))}
-          
-          {/* Join card */}
-          <div className="p-8 bg-balay-gradient rounded-3xl flex flex-col items-center justify-center text-center text-white">
-            <h3 className="text-2xl font-bold mb-4 italic font-serif">Ready to Begin?</h3>
-            <p className="mb-8 opacity-90">Start your journey with us today inside the Skool community.</p>
-            <a 
-              href="https://www.skool.com/balay-school-5230/about"
-              className="px-6 py-3 bg-white text-purple-700 font-bold rounded-full hover:scale-105 transition-all"
-            >
-              Access Community
-            </a>
-          </div>
         </div>
       </div>
     </section>

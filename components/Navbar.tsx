@@ -6,7 +6,7 @@ interface NavbarProps {
 }
 
 const Navbar: React.FC<NavbarProps> = ({ isScrolled }) => {
-  const logoUrl = "https://raw.githubusercontent.com/vinceallenz/vinceallenz.github.io/main/balay-logo.png";
+  const logoUrl = "https://raw.githubusercontent.com/kabuay/Balay-School/main/logo.png";
 
   return (
     <nav className={`fixed top-0 w-full z-50 transition-all duration-300 ${isScrolled ? 'bg-white/90 backdrop-blur-lg shadow-sm py-3' : 'bg-transparent py-6'}`}>
@@ -26,7 +26,6 @@ const Navbar: React.FC<NavbarProps> = ({ isScrolled }) => {
         </div>
         
         <div className="flex gap-4 md:gap-8 items-center font-semibold text-slate-700">
-          <a href="#why" className="hidden sm:block hover:text-purple-600 transition-colors text-sm md:text-base">Why Us</a>
           <a 
             href="https://www.skool.com/balay-school-5230/about" 
             target="_blank"

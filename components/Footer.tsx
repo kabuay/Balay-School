@@ -2,7 +2,7 @@
 import React from 'react';
 
 const Footer: React.FC = () => {
-  const logoUrl = "https://raw.githubusercontent.com/vinceallenz/vinceallenz.github.io/main/balay-logo.png";
+  const logoUrl = "https://raw.githubusercontent.com/kabuay/Balay-School/main/logo.png";
 
   return (
     <footer className="bg-slate-50 py-16 border-t border-slate-200 px-6">
@@ -13,6 +13,9 @@ const Footer: React.FC = () => {
               src={logoUrl} 
               alt="Balay School Logo" 
               className="h-8 w-8 object-contain"
+              onError={(e) => {
+                (e.target as HTMLImageElement).src = 'https://ui-avatars.com/api/?name=BS&background=a855f7&color=fff';
+              }}
             />
             <span className="text-3xl font-black tracking-tighter">
               BALAY<span className="gradient-text">SCHOOL</span>

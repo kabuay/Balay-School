@@ -2,7 +2,7 @@
 import React from 'react';
 
 const Hero: React.FC = () => {
-  const logoUrl = "https://raw.githubusercontent.com/vinceallenz/vinceallenz.github.io/main/balay-logo.png";
+  const logoUrl = "https://raw.githubusercontent.com/kabuay/Balay-School/main/logo.png";
 
   return (
     <section className="pt-32 pb-20 md:pt-48 md:pb-32 px-6 relative overflow-hidden">
@@ -13,30 +13,30 @@ const Hero: React.FC = () => {
               <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-purple-400 opacity-75"></span>
               <span className="relative inline-flex rounded-full h-2 w-2 bg-purple-500"></span>
             </span>
-            Enrollment Open for 2025
+            Full Launch: March 2026
           </div>
           <h1 className="text-5xl md:text-6xl lg:text-7xl font-extrabold leading-[1.1] mb-8 font-serif">
             Rediscover the <br/>
             Philippines <span className="italic gradient-text">Within You.</span>
           </h1>
-          <p className="text-lg md:text-xl text-slate-600 mb-10 leading-relaxed max-w-xl mx-auto lg:mx-0">
-            Balay School is more than just a course. It's a journey back to the ancestral wisdom, scripts, and practices that define our true identity.
+          <p className="text-xl md:text-2xl text-slate-800 font-semibold mb-4 leading-relaxed max-w-xl mx-auto lg:mx-0">
+            Learn what you were never taught at home or in school.
           </p>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
+          <p className="text-lg text-slate-600 mb-10 leading-relaxed max-w-xl mx-auto lg:mx-0">
+            Balay School is a digital sanctuary for those seeking to unlearn misconceptions and embrace the deep cultural wisdom of the islands. Reconnect with your roots through ancestral writing and practices.
+          </p>
+          <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start items-center">
             <a 
               href="https://www.skool.com/balay-school-5230/about" 
               target="_blank"
               rel="noopener noreferrer"
               className="px-10 py-5 bg-balay-gradient text-white font-bold rounded-2xl hover:shadow-2xl hover:-translate-y-1 transition-all text-center text-lg shadow-lg shadow-purple-200"
             >
-              Enter the School
+              Get Early Access
             </a>
-            <button 
-              onClick={() => document.getElementById('why')?.scrollIntoView({ behavior: 'smooth' })}
-              className="px-10 py-5 bg-white text-slate-900 border border-slate-200 font-bold rounded-2xl hover:bg-slate-50 transition-all text-center text-lg shadow-sm"
-            >
-              Our Philosophy
-            </button>
+            <div className="text-slate-500 font-bold text-sm uppercase tracking-widest px-4">
+              Coming in March, 2026!
+            </div>
           </div>
         </div>
         
@@ -55,17 +55,6 @@ const Hero: React.FC = () => {
                   (e.target as HTMLImageElement).src = 'https://ui-avatars.com/api/?name=B+S&size=512&background=a855f7&color=fff';
                 }}
               />
-            </div>
-            
-            {/* Floating Badge */}
-            <div className="absolute -bottom-6 -right-6 md:bottom-4 md:right-4 bg-white shadow-2xl rounded-2xl p-4 flex items-center gap-3 border border-slate-100 animate-bounce">
-              <div className="w-10 h-10 rounded-full bg-green-100 flex items-center justify-center text-green-600">
-                <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2L1 12h3v9h6v-6h4v6h6v-9h3L12 2z"/></svg>
-              </div>
-              <div className="text-left">
-                <p className="text-xs font-bold text-slate-400 uppercase tracking-tighter">Community</p>
-                <p className="text-sm font-black text-slate-900">5k+ Members</p>
-              </div>
             </div>
           </div>
 
