@@ -1,0 +1,8 @@
+{
+  "name": "Balay School Landing Page",
+  "description": "A high-conversion landing page for Balay School, an online school focused on pre-Philippine culture, writing, and traditional practices.",
+  "requestFramePermissions": [
+    "camera",
+    "microphone"
+  ]
+}
